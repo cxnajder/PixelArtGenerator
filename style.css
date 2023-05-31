@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#Console {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#checkboxes {
+    display: flex;
+}
+
+.console_element {
+    padding: 10px;
+}
+
+.checkbox {
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+}
+
+#Canva {
+    margin: 0 auto;
+    background-color: #444;
+}
+
+.pixel {
+    background-color: #eee;
+}
