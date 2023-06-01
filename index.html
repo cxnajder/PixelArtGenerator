@@ -6,32 +6,47 @@
     <body>
         <div id="TheWorld">
             <div id="Console">
-                <div class="slider_box, console_element">
-                    <label>Canva Size</label>
-                    <input type="range" min="100" max="1000" value="100" step="100" id="canva_slider">
-                    <div id="canva_slider_value">slider value will be here</div>
-                </div>
-                <div class="slider_box, console_element">
-                    <label>Pixel Size</label>
-                    <input type="range" min="10" max="50" value="10" step="10" id="pixel_slider">
-                    <div id="pixel_slider_value">slider value will be here</div>
-                </div>
-                <div id="checkboxes" class="console_element">
-                    <div class="checkbox">
-                        <input type="checkbox" id="checkbox_plain" name="checkbox_plain" checked="true">
-                        <label for="myCheckbox">Plain</label>
+                <div id="Console_flex">
+                    <div class="slider_box, console_element">
+                        <label>Canva Size</label>
+                        <input type="range" min="100" max="1000" value="100" step="100" id="canva_slider">
+                        <div id="canva_slider_value">slider value will be here</div>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="checkbox_mirror" name="checkbox_mirror">
-                        <label for="myCheckbox">Mirror</label>
+                    <div class="slider_box, console_element">
+                        <label>Pixel Size</label>
+                        <input type="range" min="1" max="6" value="1" step="1" id="pixel_slider">
+                        <div id="pixel_slider_value">slider value will be here</div>
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="checkbox_dmirror" name="checkbox_dmirror">
-                        <label for="myCheckbox">Duo Mirror</label>
+                    <div id="mirroring_checkboxes" class="console_element">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox_plain" name="checkbox_plain" checked="true" value="plain">
+                            <label for="myCheckbox">Plain</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox_mirror" name="checkbox_mirror" value="mirror">
+                            <label for="myCheckbox">Mirror</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox_dmirror" name="checkbox_dmirror" value="double_mirror">
+                            <label for="myCheckbox">Duo Mirror</label>
+                        </div>
+                    </div>
+                    <div id="colorpalte_checkboxes" class="console_element">
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox_binar" name="checkbox_binar" checked="true" value="binar">
+                            <label for="myCheckbox">Black&White</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox_monochrom" name="checkbox_monochrom" value="monochrom">
+                            <label for="myCheckbox">MonoChroma</label>
+                        </div>
+                    </div>
+                    <div id="Submit_box" class="console_element">
+                        <button type="button" id="Submit">Generate</button>
                     </div>
                 </div>
-                <div id="Submit_box" class="console_element">
-                    <button type="button">Generate</button>
+                <div id="Console_summary">
+                    <p>There will be 10000 pixels generated</p>
                 </div>
             </div>
             <div id="Canva"></div>

@@ -3,15 +3,29 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+#TheWorld {
+    height: 100%;
+    color: white;
+    background-color: #444;
+}
+
 #Console {
-    display: flex;
-    width: 1000px;
+    width: 1400px;
     margin: 0 auto;
 }
 
-#checkboxes {
+#Console_flex {
     display: flex;
 }
+
+#mirroring_checkboxes, #colorpalte_checkboxes{
+    display: flex;
+}
+
 
 .console_element {
     padding: 10px;
@@ -26,10 +40,12 @@ button {
 }
 
 #Canva {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
-    background-color: #444;
+    background-color: #666;
 }
 
 .pixel {
-    background-color: #eee;
+    background-color: #ddd;
 }
